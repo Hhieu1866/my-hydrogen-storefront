@@ -53,8 +53,11 @@ import * as TestimonialItems from "~/sections/testimonials/items";
 import * as VideoEmbed from "~/sections/video-embed";
 import * as VideoEmbedItem from "~/sections/video-embed/video";
 import * as HeroMinimal from "~/sections/hero-minimal";
+import * as MyHeader from "~/sections/header";
+import * as OurProducts from "~/sections/our-products";
 
 export const components: HydrogenComponent[] = [
+  MyHeader,
   SubHeading,
   Heading,
   Paragraph,
@@ -114,4 +117,5 @@ export const components: HydrogenComponent[] = [
   SlideShowSlide,
   Spacer,
   HeroMinimal,
+  OurProducts,
 ];

@@ -62,7 +62,7 @@ const HeroMinimal = forwardRef<HTMLElement, HeroMinimalProps>((props, ref) => {
       {/* Content */}
       <div
         style={{ margin: "0 auto", maxWidth }}
-        className={`text-${align} px-6 py-16 md:py-24 relative z-10`}
+        className={`text-${align} px-6 py-16 md:py-24 relative`}
       >
         {subheading && (
           <p className="mb-2 text-sm opacity-80 tracking-wide uppercase">

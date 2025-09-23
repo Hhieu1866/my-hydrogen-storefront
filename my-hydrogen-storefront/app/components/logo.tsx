@@ -4,7 +4,11 @@ import clsx from "clsx";
 import { Link } from "~/components/link";
 import { useShopMenu } from "~/hooks/use-shop-menu";
 
-export function Logo() {
+interface LogoProps {
+  className?: string;
+}
+
+export function Logo({ className }: LogoProps) {
   const { shopName } = useShopMenu();
   const { logoData, transparentLogoData, logoWidth } = useThemeSettings();
 
@@ -12,7 +16,10 @@ export function Logo() {
     <Link
       to="/"
       prefetch="intent"
-      className="z-30 flex h-full w-full items-center justify-center lg:h-fit lg:w-fit"
+      className={clsx(
+        "z-30 flex h-full w-full items-center justify-center lg:h-fit lg:w-fit",
+        className,
+      )}
     >
       <div
         className="relative h-full"
