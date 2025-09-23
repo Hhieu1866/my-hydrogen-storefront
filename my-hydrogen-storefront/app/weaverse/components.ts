@@ -55,6 +55,9 @@ import * as VideoEmbedItem from "~/sections/video-embed/video";
 import * as HeroMinimal from "~/sections/hero-minimal";
 import * as MyHeader from "~/sections/header";
 import * as OurProducts from "~/sections/our-products";
+import * as MyTestimonials from "~/sections/my-testimonials";
+import * as MyTestimonialItem from "~/sections/my-testimonials/item";
+import * as MyHeroBanner from "~/sections/my-herobanner";
 
 export const components: HydrogenComponent[] = [
   MyHeader,
@@ -118,4 +121,7 @@ export const components: HydrogenComponent[] = [
   Spacer,
   HeroMinimal,
   OurProducts,
+  MyTestimonials,
+  MyTestimonialItem,
+  MyHeroBanner,
 ];

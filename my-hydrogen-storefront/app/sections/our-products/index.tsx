@@ -5,6 +5,7 @@ import { layoutInputs, Section, type SectionProps } from "~/components/section";
 import { PRODUCT_CARD_FRAGMENT } from "~/graphql/fragments";
 import type { ProductQuery } from "storefront-api.generated";
 import { OurProductCard } from "./product-card";
+import Link from "~/components/link";
 
 interface OurProductsProps extends SectionProps {
   heading?: string;
@@ -144,12 +145,12 @@ const OurProducts = forwardRef<HTMLElement, OurProductsProps>((props, ref) => {
         {/* view all btn */}
         {showViewAll && products && products.length > 0 && (
           <div className="text-center mt-8">
-            <a
-              href={viewAllLink}
-              className="inline-block bg-black text-white border border-black uppercase px-8 py-3 font-semibold hover:bg-white hover:text-black transition-colors tracking-wider"
+            <Link
+              to={viewAllLink}
+              className="inline-block bg-[#1E1C1A] text-white border border-black uppercase px-8 py-3 font-semibold hover:bg-white hover:text-black transition-colors tracking-wider"
             >
               {viewAllText}
-            </a>
+            </Link>
           </div>
         )}
       </div>
