@@ -73,7 +73,7 @@ const MyTestimonials = forwardRef<HTMLElement, MyTestimonialsProps>(
                 {headingTag === "h5" && <h5>{heading}</h5>}
                 {headingTag === "h6" && <h6>{heading}</h6>}
               </div>
-              <Separator className=" bg-black max-w-16 mx-auto" />
+              <Separator className=" bg-black max-w-16 mx-auto mt-4" />
             </div>
           )}
 
