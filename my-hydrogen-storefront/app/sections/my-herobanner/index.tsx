@@ -97,15 +97,14 @@ const MyHeroBanner = forwardRef<HTMLElement, MyHeroBannerProps>(
                   image || {
                     url: "/fallback.webp",
                     altText: "Hero banner placeholder",
-                    width: 1200,
-                    height: 600,
                   }
                 }
+                aspectRatio="3.2/1"
                 className="w-full h-full object-cover"
                 sizes="100vw"
               />
             </div>
-            <div className="container relative mx-auto px-4 z-10">
+            <div className="container relative mx-auto px-4">
               <div
                 className={cn(
                   "max-w-lg py-16",
@@ -216,6 +215,7 @@ const MyHeroBanner = forwardRef<HTMLElement, MyHeroBannerProps>(
                   aspectRatio="16/9"
                   className="w-full object-cover"
                   sizes="(min-width: 768px) 50vw, 100vw"
+                  loading="eager"
                 />
               </div>
             </div>

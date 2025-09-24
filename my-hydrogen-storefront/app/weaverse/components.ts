@@ -58,6 +58,8 @@ import * as OurProducts from "~/sections/our-products";
 import * as MyTestimonials from "~/sections/my-testimonials";
 import * as MyTestimonialItem from "~/sections/my-testimonials/item";
 import * as MyHeroBanner from "~/sections/my-herobanner";
+import * as MyLatestPosts from "~/sections/my-latest-posts";
+import * as BlogPostItems from "~/sections/my-latest-posts/post-item";
 
 export const components: HydrogenComponent[] = [
   MyHeader,
@@ -124,4 +126,6 @@ export const components: HydrogenComponent[] = [
   MyTestimonials,
   MyTestimonialItem,
   MyHeroBanner,
+  MyLatestPosts,
+  BlogPostItems,
 ];

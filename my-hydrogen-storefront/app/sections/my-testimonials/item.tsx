@@ -24,7 +24,7 @@ const TestimonialItem = forwardRef<HTMLDivElement, TestimonialItemProps>(
       >
         {/* Quote mark */}
         <div className="">
-          <img src="../../../public/testimonials-icon.webp" alt="" />
+          <img src="/testimonials-icon.webp" alt="" />
         </div>
 
         {/* quote */}
