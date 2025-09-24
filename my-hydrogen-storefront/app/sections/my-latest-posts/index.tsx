@@ -65,7 +65,7 @@ const MyLatestPosts = forwardRef<HTMLElement, MyLatestPostsProps>(
     };
 
     const gridClasses = clsx(
-      "grid gap-4",
+      "grid gap-5",
       mobileClasses[columnsMobile as keyof typeof mobileClasses],
       desktopClasses[columnDesktop as keyof typeof desktopClasses],
     );

@@ -96,7 +96,7 @@ const BlogPostItems = forwardRef<HTMLDivElement, BlogPostItemsProps>(
               <div className="overflow-hidden">
                 <Image
                   data={post.image}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="size-full object-cover transition-transform duration-300 group-hover:scale-110"
                   aspectRatio="16/9"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
