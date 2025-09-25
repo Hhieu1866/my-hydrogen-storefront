@@ -62,6 +62,9 @@ import * as MyLatestPosts from "~/sections/my-latest-posts";
 import * as BlogPostItems from "~/sections/my-latest-posts/post-item";
 import * as Subscribe from "~/sections/subscribe";
 import * as MyHeading from "~/components/my-heading";
+import * as ProductCategories from "~/sections/product-categories";
+import * as CategoryItem from "~/sections/product-categories/category-item";
+import * as CategoryItems from "~/sections/product-categories/category-items";
 
 export const components: HydrogenComponent[] = [
   MyHeader,
@@ -132,4 +135,7 @@ export const components: HydrogenComponent[] = [
   BlogPostItems,
   Subscribe,
   MyHeading,
+  ProductCategories,
+  CategoryItem,
+  CategoryItems,
 ];

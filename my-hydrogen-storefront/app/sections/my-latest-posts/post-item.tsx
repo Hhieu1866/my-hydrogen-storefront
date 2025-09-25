@@ -117,7 +117,7 @@ const BlogPostItems = forwardRef<HTMLDivElement, BlogPostItemsProps>(
 
               {/* Title */}
               <h3
-                className="mb-3 text-xl font-semibold leading-tight"
+                className="mb-3 text-xl font-semibold leading-tight line-clamp-1"
                 style={{ color: titleColor }}
               >
                 {post.title}
