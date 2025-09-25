@@ -140,7 +140,7 @@ const BlogPostItems = forwardRef<HTMLDivElement, BlogPostItemsProps>(
               <div className="mt-auto">
                 <a
                   href={`/blogs/${post.blogHandle}/${post.handle}`}
-                  className="inline-flex items-center text-xs font-medium hover:underline"
+                  className="inline-flex items-center text-sm font-medium hover:underline"
                   style={{ color: linkColor }}
                 >
                   Read more

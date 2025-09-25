@@ -61,6 +61,7 @@ import * as MyHeroBanner from "~/sections/my-herobanner";
 import * as MyLatestPosts from "~/sections/my-latest-posts";
 import * as BlogPostItems from "~/sections/my-latest-posts/post-item";
 import * as Subscribe from "~/sections/subscribe";
+import * as MyHeading from "~/components/my-heading";
 
 export const components: HydrogenComponent[] = [
   MyHeader,
@@ -130,4 +131,5 @@ export const components: HydrogenComponent[] = [
   MyLatestPosts,
   BlogPostItems,
   Subscribe,
+  MyHeading,
 ];
