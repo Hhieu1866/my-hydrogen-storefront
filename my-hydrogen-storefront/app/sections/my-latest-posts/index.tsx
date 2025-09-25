@@ -156,41 +156,6 @@ export const schema = createSchema({
           placeholder: "Enter section heading",
         },
         {
-          type: "select",
-          name: "headingTag",
-          label: "HTML tag",
-          defaultValue: "h2",
-          configs: {
-            options: [
-              { value: "h1", label: "<h1> (Heading 1)" },
-              { value: "h2", label: "<h2> (Heading 2)" },
-              { value: "h3", label: "<h3> (Heading 3)" },
-              { value: "h4", label: "<h4> (Heading 4)" },
-              { value: "h5", label: "<h5> (Heading 5)" },
-              { value: "h6", label: "<h6> (Heading 6)" },
-            ],
-          },
-        },
-        {
-          type: "select",
-          name: "headingWeight",
-          label: "Weight",
-          defaultValue: "600",
-          configs: {
-            options: [
-              { value: "100", label: "100 - Thin" },
-              { value: "200", label: "200 - Extra Light" },
-              { value: "300", label: "300 - Light" },
-              { value: "400", label: "400 - Normal" },
-              { value: "500", label: "500 - Medium" },
-              { value: "600", label: "600 - Semi Bold" },
-              { value: "700", label: "700 - Bold" },
-              { value: "800", label: "800 - Extra Bold" },
-              { value: "900", label: "900 - Black" },
-            ],
-          },
-        },
-        {
           type: "range",
           name: "postsCount",
           label: "Posts count",
@@ -225,7 +190,47 @@ export const schema = createSchema({
       ],
     },
     {
-      group: "Layout",
+      group: "Typography",
+      inputs: [
+        {
+          type: "select",
+          name: "headingTag",
+          label: "HTML tag",
+          defaultValue: "h2",
+          configs: {
+            options: [
+              { value: "h1", label: "<h1> (Heading 1)" },
+              { value: "h2", label: "<h2> (Heading 2)" },
+              { value: "h3", label: "<h3> (Heading 3)" },
+              { value: "h4", label: "<h4> (Heading 4)" },
+              { value: "h5", label: "<h5> (Heading 5)" },
+              { value: "h6", label: "<h6> (Heading 6)" },
+            ],
+          },
+        },
+        {
+          type: "select",
+          name: "headingWeight",
+          label: "Weight",
+          defaultValue: "600",
+          configs: {
+            options: [
+              { value: "100", label: "100 - Thin" },
+              { value: "200", label: "200 - Extra Light" },
+              { value: "300", label: "300 - Light" },
+              { value: "400", label: "400 - Normal" },
+              { value: "500", label: "500 - Medium" },
+              { value: "600", label: "600 - Semi Bold" },
+              { value: "700", label: "700 - Bold" },
+              { value: "800", label: "800 - Extra Bold" },
+              { value: "900", label: "900 - Black" },
+            ],
+          },
+        },
+      ],
+    },
+    {
+      group: "Layout & Style",
       inputs: [
         {
           type: "select",

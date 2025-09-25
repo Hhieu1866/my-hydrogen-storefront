@@ -174,7 +174,7 @@ export const schema = createSchema({
   title: "Blog post items",
   settings: [
     {
-      group: "Blog item styles",
+      group: "Typography",
       inputs: [
         {
           type: "color",
@@ -202,6 +202,25 @@ export const schema = createSchema({
         },
         {
           type: "select",
+          name: "excerptLineClamp",
+          label: "Excerpt line clamp",
+          defaultValue: "2",
+          configs: {
+            options: [
+              { value: "1", label: "1 line" },
+              { value: "2", label: "2 lines" },
+              { value: "3", label: "3 lines" },
+              { value: "4", label: "4 lines" },
+            ],
+          },
+        },
+      ],
+    },
+    {
+      group: "Layout & Style",
+      inputs: [
+        {
+          type: "select",
           name: "cardBorderRadius",
           label: "Card border radius",
           defaultValue: "lg",
@@ -212,20 +231,6 @@ export const schema = createSchema({
               { value: "md", label: "Medium" },
               { value: "lg", label: "Large" },
               { value: "xl", label: "Extra Large" },
-            ],
-          },
-        },
-        {
-          type: "select",
-          name: "excerptLineClamp",
-          label: "Excerpt line clamp",
-          defaultValue: "2",
-          configs: {
-            options: [
-              { value: "1", label: "1 line" },
-              { value: "2", label: "2 lines" },
-              { value: "3", label: "3 lines" },
-              { value: "4", label: "4 lines" },
             ],
           },
         },

@@ -181,53 +181,37 @@ export const schema = createSchema({
       inputs: [
         {
           type: "text",
-          name: "heading",
-          label: "Heading",
-          defaultValue: "Subscribe",
-          placeholder: "Enter heading text",
-        },
-        {
-          type: "select",
-          name: "headingTag",
-          label: "HTML tag",
-          defaultValue: "h2",
-          configs: {
-            options: [
-              { value: "h1", label: "<h1> (Heading 1)" },
-              { value: "h2", label: "<h2> (Heading 2)" },
-              { value: "h3", label: "<h3> (Heading 3)" },
-              { value: "h4", label: "<h4> (Heading 4)" },
-              { value: "h5", label: "<h5> (Heading 5)" },
-              { value: "h6", label: "<h6> (Heading 6)" },
-            ],
-          },
-        },
-        {
-          type: "select",
-          name: "headingWeight",
-          label: "Weight",
-          defaultValue: "600",
-          configs: {
-            options: [
-              { value: "100", label: "100 - Thin" },
-              { value: "200", label: "200 - Extra Light" },
-              { value: "300", label: "300 - Light" },
-              { value: "400", label: "400 - Normal" },
-              { value: "500", label: "500 - Medium" },
-              { value: "600", label: "600 - Semi Bold" },
-              { value: "700", label: "700 - Bold" },
-              { value: "800", label: "800 - Extra Bold" },
-              { value: "900", label: "900 - Black" },
-            ],
-          },
-        },
-        {
-          type: "text",
           name: "content",
           label: "Content",
           defaultValue: "Get 20% Off Your Next Order",
           placeholder: "Enter content text",
         },
+        {
+          type: "text",
+          name: "highlightText",
+          label: "Highlight text",
+          defaultValue: "20%",
+          placeholder: "Text to highlight",
+        },
+        {
+          type: "text",
+          name: "buttonText",
+          label: "Button text",
+          defaultValue: "SUBSCRIBE",
+          placeholder: "Button text",
+        },
+        {
+          type: "text",
+          name: "placeholderText",
+          label: "Placeholder text",
+          defaultValue: "Enter you email",
+          placeholder: "Email placeholder",
+        },
+      ],
+    },
+    {
+      group: "Typography",
+      inputs: [
         {
           type: "select",
           name: "contentSize",
@@ -252,6 +236,17 @@ export const schema = createSchema({
           },
         },
         {
+          type: "color",
+          name: "highlightColor",
+          label: "Highlight color",
+          defaultValue: "#79A206",
+        },
+      ],
+    },
+    {
+      group: "Layout & Style",
+      inputs: [
+        {
           type: "range",
           name: "contentSpacing",
           label: "Content spacing",
@@ -263,38 +258,6 @@ export const schema = createSchema({
             unit: "px",
           },
         },
-        {
-          type: "text",
-          name: "highlightText",
-          label: "Highlight text",
-          defaultValue: "20%",
-          placeholder: "Text to highlight",
-        },
-        {
-          type: "color",
-          name: "highlightColor",
-          label: "Highlight color",
-          defaultValue: "#79A206",
-        },
-        {
-          type: "text",
-          name: "buttonText",
-          label: "Button text",
-          defaultValue: "SUBSCRIBE",
-          placeholder: "Button text",
-        },
-        {
-          type: "text",
-          name: "placeholderText",
-          label: "Placeholder text",
-          defaultValue: "Enter you email",
-          placeholder: "Email placeholder",
-        },
-      ],
-    },
-    {
-      group: "Layout",
-      inputs: [
         {
           type: "range",
           name: "paddingTop",
