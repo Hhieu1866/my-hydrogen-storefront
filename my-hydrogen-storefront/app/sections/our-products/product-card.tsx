@@ -70,7 +70,7 @@ export function OurProductCard({
             {/* Loading skeleton overlay */}
             {isImageLoading && <Spinner />}
             <Image
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="h-full w-full transition-transform duration-500 group-hover:scale-105"
               sizes="(min-width: 64em) 25vw, (min-width: 48em) 30vw, 45vw"
               data={image}
               width={500}

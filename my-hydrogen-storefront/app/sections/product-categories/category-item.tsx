@@ -103,7 +103,7 @@ const CategoryItem = forwardRef<HTMLDivElement, CategoryItemProps>(
         {/* background Image */}
         <Image
           data={image || { url: "/fallback.webp", altText: title }}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full "
           loading="lazy"
           width={467}
           height={300}
@@ -138,7 +138,7 @@ const CategoryItem = forwardRef<HTMLDivElement, CategoryItemProps>(
             {/* title */}
             <p
               className={clsx(
-                "font-bold mb-2 leading-tight",
+                "font-bold mb-2 leading-tight w-32",
                 sizeClasses[titleSize],
               )}
               style={{ color: titleColor }}

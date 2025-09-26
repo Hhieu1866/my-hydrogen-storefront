@@ -89,21 +89,17 @@ const MyHeroBanner = forwardRef<HTMLElement, MyHeroBannerProps>(
         className={cn(isFullImage && "relative overflow-hidden")}
       >
         {isFullImage ? (
-          // Full image layout with absolute positioning
           <>
-            <div className="absolute inset-0 w-full h-full">
-              <Image
-                data={
-                  image || {
-                    url: "/fallback.webp",
-                    altText: "Hero banner placeholder",
-                  }
+            <Image
+              data={
+                image || {
+                  url: "/fallback.webp",
+                  altText: "Hero banner placeholder",
                 }
-                aspectRatio="3.2/1"
-                className="w-full h-full object-cover"
-                sizes="100vw"
-              />
-            </div>
+              }
+              className="absolute inset-0 w-full h-full"
+            />
+
             <div className="container relative mx-auto px-4">
               <div
                 className={cn(

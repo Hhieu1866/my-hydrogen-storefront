@@ -122,6 +122,7 @@ const OurProducts = forwardRef<HTMLElement, OurProductsProps>((props, ref) => {
         {/* products grid */}
         <div
           style={{ marginBottom: showViewAll ? `${contentSpacing}px` : "0" }}
+          className="mt-10"
         >
           {products && products.length > 0 ? (
             <div className={gridClasses}>
